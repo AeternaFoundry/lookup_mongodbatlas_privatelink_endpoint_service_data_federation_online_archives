@@ -1,0 +1,6 @@
+data "mongodbatlas_privatelink_endpoint_service_data_federation_online_archives" "privatelink_endpoint_service_data_federation_online_archives_lookup" {
+  for_each = var.privatelink_endpoint_service_data_federation_online_archives_lookup
+
+  project_id = each.value.project_id
+}
+
